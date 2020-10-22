@@ -1,7 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"github.com/urfave/cli/v2"
+	"os"
+)
 
 func main() {
-	fmt.Println("hello world")
+	(&cli.App{}).Run(os.Args)
 }
