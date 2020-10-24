@@ -1,10 +1,14 @@
 package main
 
 import (
-	"github.com/urfave/cli/v2"
+	"log"
 	"os"
+	"rinne.dev/deployer/app"
 )
 
 func main() {
-	(&cli.App{}).Run(os.Args)
+	err := app.App().Run(os.Args)
+	if err != nil {
+		log.Fatal(err)
+	}
 }

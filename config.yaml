@@ -1,0 +1,12 @@
+env: "debug"
+listen: "127.0.0.1:7000"
+tasks:
+  core.moe:
+    type: "github"
+    secret: "xxxxxxxx"
+    workdir: "/var/www"
+    templates:
+      - "git"
+      - "custom"
+    commands:
+      - "echo hello"
