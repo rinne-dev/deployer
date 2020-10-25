@@ -8,6 +8,7 @@ require (
 	github.com/fsnotify/fsnotify v1.4.9 // indirect
 	github.com/gin-gonic/gin v1.6.3
 	github.com/go-playground/validator/v10 v10.4.1 // indirect
+	github.com/gogits/go-gogs-client v0.0.0-20200905025246-8bb8a50cb355 // indirect
 	github.com/golang/protobuf v1.4.3 // indirect
 	github.com/json-iterator/go v1.1.10 // indirect
 	github.com/magiconair/properties v1.8.4 // indirect
@@ -25,7 +26,7 @@ require (
 	golang.org/x/crypto v0.0.0-20201016220609-9e8e0b390897 // indirect
 	golang.org/x/sys v0.0.0-20201022201747-fb209a7c41cd // indirect
 	google.golang.org/protobuf v1.25.0 // indirect
-	gopkg.in/go-playground/webhooks.v5 v5.15.0 // indirect
+	gopkg.in/go-playground/webhooks.v5 v5.15.0
 	gopkg.in/ini.v1 v1.62.0 // indirect
 	gopkg.in/yaml.v2 v2.3.0 // indirect
 )
