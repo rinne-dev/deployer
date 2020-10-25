@@ -12,7 +12,7 @@ func Github(req *http.Request, secret string) error {
 		return err
 	}
 
-	_, err = hook.Parse(req, github.PushEvent)
+	_, err = hook.Parse(req, github.PingEvent, github.PushEvent)
 	if err != nil {
 		return err
 	}
