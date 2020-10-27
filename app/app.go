@@ -7,11 +7,14 @@ import (
 	"rinne.dev/deployer/server"
 )
 
+const VERSION = "v0.1.0"
+
 // App 返回 CLI 实例
 func App() *cli.App {
 	return &cli.App{
 		Name: "Deployer@RinNe.Dev",
 		Usage: "一个简单易用的部署工具",
+		Version: VERSION,
 		Flags: []cli.Flag{
 			&cli.StringFlag{
 				Name: "config",
