@@ -7,7 +7,7 @@ import (
 	"rinne.dev/deployer/server"
 )
 
-const VERSION = "v0.1.0"
+const VERSION = "v0.1.1"
 
 // App 返回 CLI 实例
 func App() *cli.App {
