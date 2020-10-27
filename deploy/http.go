@@ -28,6 +28,9 @@ func HttpHandler(c *gin.Context) {
 	case "gogs":
 		err = webhook.Gogs(c.Request, appSecret)
 		break
+	case "gitlab":
+		err = webhook.Gitlab(c.Request, appSecret)
+		break
 	default:
 		c.JSON(400, gin.H{
 			"message": "not supported",
