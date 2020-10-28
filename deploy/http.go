@@ -7,8 +7,8 @@ import (
 	"rinne.dev/deployer/webhook"
 )
 
-// HttpHandler HTTP 处理器
-func HttpHandler(c *gin.Context) {
+// HTTPHandler HTTP 处理器
+func HTTPHandler(c *gin.Context) {
 	appName := c.Param("name")
 	err := task.Exist(appName)
 	if err != nil {

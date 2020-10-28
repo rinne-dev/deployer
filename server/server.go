@@ -28,6 +28,6 @@ func Serve() error {
 			"message": "Deployer@RinNe.Dev",
 		})
 	})
-	r.POST("/:name/deploy.hook", deploy.HttpHandler)
+	r.POST("/:name/deploy.hook", deploy.HTTPHandler)
 	return r.Run(config.GetString("listen"))
 }

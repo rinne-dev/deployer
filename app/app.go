@@ -7,6 +7,7 @@ import (
 	"rinne.dev/deployer/server"
 )
 
+// VERSION 版本号
 const VERSION = "v0.1.1"
 
 // App 返回 CLI 实例
