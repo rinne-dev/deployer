@@ -1,12 +1,11 @@
 env: "debug"
 listen: "127.0.0.1:7000"
 tasks:
-  core.moe:
+  test:
     type: "github"
     secret: "xxxxxxxx"
-    workdir: "/var/www"
+    workdir: "./"
     templates:
-      - "git"
       - "custom"
     commands:
-      - "echo hello"
+      - "touch deploy_test"
